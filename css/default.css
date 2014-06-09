@@ -1,0 +1,39 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#wrap {
+	width: 400px;
+	margin: 10px auto 0px;
+}
+
+#wrap ul {
+	list-style-type: none;
+}
+
+#wrap ul li:after {
+	content: " ";
+	display: block;
+	float: none;
+	clear: both;
+}
+
+#wrap ul li {
+	background: #E2E2E2;
+	border: 1px solid #000;
+	height: 90px;
+	margin-top: -1px;
+	padding: 5px; 0px;
+}
+#wrap ul li:first-child {
+	margin-top: 0px;
+}
+#wrap ul li img {
+	height: 100%;
+	float: left;
+}
+#wrap ul li p {
+	float: left;
+	margin-left: 5px;
+}

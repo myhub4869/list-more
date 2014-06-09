@@ -1,0 +1,14 @@
+.more_image {
+	background: #E4E4E4;
+	text-align: center;
+	font-size: 90%;
+	border: 1px solid #000;
+	width: 100%;
+	padding: 5px 0px;
+
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
