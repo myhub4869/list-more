@@ -12,9 +12,10 @@
 
 		for( ; showIndex < lastShowIndex ; ++showIndex ) {
 			if( showIndex < listAry.length ) {
-				$this.append( $( listAry[ showIndex ] ).hide() );
+				$this.append( listAry[ showIndex ] );
 			}
 		}
+
 		if( showIndex - num > 0 && setting.animeFlag ) {
 			var oldULH = $this.height();
 			$this.children().slideDown(
@@ -62,8 +63,8 @@
 		if( !$this.is( 'ul' ) ) {
 			return;
 		}
-		$this.find( "li , ol" ).each( function( index , element ) {
-			listAry.push( element );
+		$this.find( "li" ).each( function( index , element ) {
+			listAry.push( "<li>" + $( this ).html() + "</li>" );
 		});
 		$this.html( "" );
 		if( listAry.length <= setting.showNum ) {
