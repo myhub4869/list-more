@@ -68,7 +68,7 @@
 		});
 		$this.html( "" );
 		if( listAry.length <= setting.showNum ) {
-			return;
+			setting.showNum = listAry.length;
 		}
 
 		showList( setting.showNum );
